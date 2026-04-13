@@ -1,0 +1,20 @@
+{
+  "name": "classroom-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev:api": "turbo dev --filter api",
+    "format": "prettier --write --experimental-cli .",
+    "format:check": "prettier --check --experimental-cli ."
+  },
+  "devDependencies": {
+    "prettier": "3.8.2",
+    "turbo": "^2.9.6",
+    "typescript": "^6.0.2"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  }
+}

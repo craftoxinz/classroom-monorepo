@@ -1,0 +1,10 @@
+node_modules/
+
+# Environment
+.env
+.env.local
+
+# Cache
+.turbo/
+.cache/
+coverage/
