@@ -14,13 +14,18 @@ export default defineConfig({
   ],
   languageOptions: {
     globals: {
-      ...globals.node,
+      ...globals.builtin,
+      ...globals.nodeBuiltin, // modern node esm
     },
   },
   rules: {
     '@typescript-eslint/no-unused-vars': [
       'error',
-      { args: 'all', argsIgnorePattern: '^_' },
+      {
+        args: 'all',
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+      },
     ],
   },
 });
