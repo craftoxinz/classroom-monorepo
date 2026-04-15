@@ -15,7 +15,6 @@ export default defineConfig([
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     languageOptions: {
       parserOptions: {
-        projectService: false,
         tsconfigRootDir: import.meta.dirname,
       },
     },
