@@ -3,7 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev:api": "turbo dev --filter api",
+    "dev:api": "turbo run dev --filter api",
+    "lint:api": "turbo run lint --filter api",
+    "lint:@internal/db": "turbo run lint --filter @internal/db",
     "format": "prettier --write --experimental-cli .",
     "format:check": "prettier --check --experimental-cli ."
   },
