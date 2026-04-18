@@ -42,6 +42,8 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
+    "erasableSyntaxOnly": true,
+    "rewriteRelativeImportExtensions": true,
     // "esModuleInterop": true,
     "allowImportingTsExtensions": true,
     "skipLibCheck": true
